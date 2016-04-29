@@ -1,58 +1,59 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>DBSync by Jarrrk</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/Jarrrk/DBSync">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/Jarrrk/DBSync/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/Jarrrk/DBSync/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <section class="page-header">
+      <h1 class="project-name">DBSync</h1>
+      <h2 class="project-tagline">A Linux commandline utility for pushing database changes with codebase changes</h2>
+      <a href="https://github.com/Jarrrk/DBSync" class="btn">View on GitHub</a>
+      <a href="https://github.com/Jarrrk/DBSync/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Jarrrk/DBSync/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>DBSync</h1>
-          <p>A Linux commandline utility for pushing database changes with codebase changes</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/Jarrrk">Jarrrk</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
-        <p><a href="http://gogreen.co.uk:8083/jarrrk/DBSync/commits/master"><img src="http://betahoster.com:773/jarrrk/DBSync/badges/master/build.svg" alt="build status"></a></p>
+    <section class="main-content">
+      <p><a href="http://gogreen.co.uk:8083/jarrrk/DBSync/commits/master"><img src="http://betahoster.com:773/jarrrk/DBSync/badges/master/build.svg" alt="build status"></a></p>
 
 <h3>
 <a id="what-is-dbsync" class="anchor" href="#what-is-dbsync" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is DBSync?</h3>
 
-<p>DBSync is a Linux commandline utility allowing for easy database changes between application versions.</p>
+<p>DBSync is a Linux command-line utility allowing for easy database changes between application versions. It was originally built in-house for <a href="http://gogreen.co.uk">GoGreen's</a> internal build platform but later realized a wider audience may also find this tool useful.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>DBSync is a bare-minimum executable, meaning there aren't any command-line arguments (yet). Run the command <code>dbsync</code> in any directory where there is a valid dbs_config.json &amp; dbs_updates.json.</p>
+
+<p>Something not working quite right? You can enable verbose outputting by setting an environmental variable like so: <code>export DBSYNC_DEBUG=true</code></p>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>JDK/JRE 1.6 or upwards</li>
+</ul>
 
 <h3>
 <a id="install-instructions" class="anchor" href="#install-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Instructions</h3>
+
+<p>Simply download the latest release and copy the <code>bin/dbsync</code> file from the downloaded archive in to your <code>/usr/bin/</code> system folder.</p>
+
+<p>After you've moved the file you will want to make it executable using: <code>chmod +x /usr/bin/dbsync</code></p>
+
+<p>That's pretty much it, see usage instructions.</p>
 
 <h3>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h3>
 
 <ul>
-<li>Design - Jack Carlin &amp; David Hinchliffe</li>
+<li>Initial Design - David Hinchliffe &amp; Jack Carlin</li>
 <li>Programming - Jack Carlin</li>
 </ul>
 
@@ -73,10 +74,15 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.</p>
-      </section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Jarrrk/DBSync">DBSync</a> is maintained by <a href="https://github.com/Jarrrk">Jarrrk</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
   </body>
 </html>
