@@ -19,7 +19,7 @@
     </section>
 
     <section class="main-content">
-      <p><a href="http://gogreen.co.uk:8083/jarrrk/DBSync/commits/master"><img src="http://betahoster.com:773/jarrrk/DBSync/badges/master/build.svg" alt="build status"></a></p>
+      <p><a href="http://betahoster.com:773/jarrrk/DBSync/builds"><img src="http://betahoster.com:773/jarrrk/DBSync/badges/master/build.svg" alt="build status"></a></p>
 
 <h3>
 <a id="what-is-dbsync" class="anchor" href="#what-is-dbsync" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What is DBSync?</h3>
@@ -28,6 +28,8 @@
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Integrating DBSync into a project takes just a few minutes. Start by downloading the latest release found <a href="http://betahoster.com:773/Jarrrk/DBSync/tags">here</a>, inside the archive you will find a example folder, inside will be two files; copy these two files in to the directory of your project and edit <code>dbs_config.json</code> to match your database settings. Once finished you can now start adding your SQL statements in to the <code>dbs_updates.json</code> file.</p>
 
 <p>DBSync is a bare-minimum executable, meaning there aren't any command-line arguments (yet). Run the command <code>dbsync</code> in any directory where there is a valid <code>dbs_config.json</code> &amp; <code>dbs_updates.json</code></p>
 
@@ -38,6 +40,7 @@
 
 <ul>
 <li>JDK/JRE 1.6 or upwards</li>
+<li>Sufficient database user permissions (CREATE, SELECT, UPDATE, INSERT)</li>
 </ul>
 
 <h3>
@@ -60,7 +63,7 @@
 <h3>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
 
-<p><strong>Copyright 2016 Jack Carlin</strong></p>
+<p>Copyright 2016 Jack Carlin</p>
 
 <p>Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
